@@ -1,0 +1,11 @@
+@import url('./normalize.css');
+
+@font-face {
+  font-family: "MyFont";
+  src: url('./../fonts/Roboto-Regular.ttf');
+}
+
+body {
+  font-family: 'MyFont', sans-serif;
+  font-weight: 900;
+}

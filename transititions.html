@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transition</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        font-size: 18px;
+        background-color: violet;
+        transition: width 1000ms ease-in;
+        transition: background-color 1000ms linear 2000ms;
+      }
+
+      .box:hover {
+        width: 400px;
+        background-color: green;
+      }
+
+      /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>Hello</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+       .container {
+           background-color: antiquewhite;
+           width: 100%;
+           height: 100vh;
+       }
+
+       .item  {
+           background-color: blue;
+           color: white;
+           border: 1px solid white;
+           min-width: 300px;
+           max-width: 100%;
+           display: inline-block;
+           padding: 1em;
+       }
+
+        @media (max-width: 671px) {
+            .item {
+                min-width: 100%;
+            }
+        }
+
+        @media (min-width: 672px) {
+            .item {
+                background-color: aqua;
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            Item 1
+        </div>
+        <div class="item">
+            Item 2
+        </div>
+        <div class="item">
+            Item 3
+        </div>
+        <div class="item">
+            Item 4
+        </div>
+        <div class="item">
+            Item 5
+        </div>
+    </div>
+</body>
+</html>

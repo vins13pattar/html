@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animations</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        /* background-color: #001f3f; */
+        animation: myfirstanim 4s linear 0s alternate-reverse infinite both running;
+
+        /* animation-name: pulse;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 2s;
+        animation-direction: reverse;
+        animation-iteration-count: 2;
+        animation-fill-mode: both;
+        animation-play-state: paused; */
+
+        /* animation: stretch 1.5s ease-out 0s alternate infinite none running; */
+      }
+
+
+      @keyframes myfirstanim {
+        10% {
+          width: 200px;
+          transform: rotate(0);
+        }
+        40% {
+          width: 300px;
+        }
+        70% {
+          width: 400px;
+        }
+        100% {
+          transform: translate(100px, 100px);
+          transform: scale(1);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://picsum.photos/200/300" alt="" class="box">
+  </body>
+</html>

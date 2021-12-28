@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Variables</title>
+    <style>
+      :root {
+        --main-bg-color: white;
+        --box1-color: red;
+        --box2-color: yellow;
+        --box3-color: gold;
+        --box4-color: pink;
+        --box-size: 300px;
+      }
+
+      body {
+        background-color: var(--main-bg-color);
+      }
+
+      ul li {
+        color: black;
+      }
+
+      ul#list > li {
+        color: red;
+      }
+
+      #list > li > ul > li {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li>
+        Item1
+        <ul>
+          <li>Item 1.1</li>
+          <li>
+            Item1.2
+            <ul>
+              <li>Item1.2.1</li>
+              <li>Item1.2.2</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Item2</li>
+      <li>
+        Item3
+        <ul>
+          <li>Item3.1</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolor
+      tempora omnis ex nulla, odio eos enim, vel sunt consequuntur voluptatibus
+      obcaecati? Nesciunt pariatur soluta ex obcaecati beatae deserunt maiores?
+    </p>
+  </body>
+</html>
